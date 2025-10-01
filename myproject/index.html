@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <style>
+
+.about-section {
+  padding: 60px;
+  background: #3c0db29c;
+  border-radius: 10px;
+  max-width: 900px;
+  margin: 50px auto;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.profile-pic {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  position: relative;
+  z-index: 1;
+  border: 4px solid #fff;
+  box-shadow: 0 0 25px rgba(0, 119, 255, 0.8);
+  animation: glow 3s ease-in-out infinite alternate;
+}
+
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 15px rgba(0, 119, 255, 0.6),
+                0 0 30px rgba(0, 119, 255, 0.4),
+                0 0 45px rgba(0, 119, 255, 0.2);
+  }
+  to {
+    box-shadow: 0 0 25px rgba(255, 0, 150, 0.9),
+                0 0 50px rgba(255, 0, 150, 0.7),
+                0 0 75px rgba(255, 0, 150, 0.5);
+  }
+}
+
+.about-text {
+  max-width: 600px;
+}
+
+.about-text h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #f9f9f9;
+}
+
+.about-text p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background:url("img.jpg");
+      color: #000000ba;
+    }
+    header {
+      background: #3c0db29c;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    nav a {
+      margin: 0 15px;
+      color: white;
+      text-decoration: none;
+    }
+    section {
+      padding: 50px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .skills, .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #3c0db29c;
+      color: white;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <h1>Fares Mohammed</h1>
+    <p>Web Developer | Programmer | Learner</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- About Section -->
+<section id="about" class="about-section">
+  <div class="about-container">
+    <img src="me3.png" alt="My Photo" class="profile-pic">
+    <div class="about-text">
+      <h2>About Me</h2>
+      <p>Hello! I'm Faris, a passionate developer learning web technologies. 
+         I love building websites and improving my programming skills every day.</p>
+    </div>
+  </div>
+</section>
+
+ 
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="card">HTML</div>
+      <div class="card">CSS</div>
+      <div class="card">JavaScript</div>
+      <div class="card">Python</div>
+      <div class="card">React</div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>Todo App</h3>
+        <p>A simple app to manage daily tasks.</p>
+      </div>
+      <div class="card">
+        <h3>Portfolio Website</h3>
+        <p>This website you're looking at right now!</p>
+      </div>
+      <div class="card">
+        <h3>Quiz App</h3>
+        <p>Interactive quiz game with multiple choice questions.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:faris7008@icloud.com">faris7008@icloud.com</a></p>
+    <p>GitHub: <a href="https://github.com/wnk14" target="_blank">github.com/wnk14</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/username" target="_blank">linkedin.com/in/username</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Faris Mohammed. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
